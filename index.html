@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>2048网页版</title>
 	<link rel="stylesheet" type="text/css" href="2048.css">
 	<script type="text/javascript" src="jquery-1.11.3.js"></script>
@@ -11,11 +14,13 @@
 	<script type="text/javascript" src="game.js"></script>
 </head>
 <body>
-	<header>
-		<h1>2048</h1>
+<div class="main">
+	<div class="tipbox">
+		<h1 class="title">2048</h1>
 		<a href="javascript:newgame();" id="newgamebutton">New Game</a>
-		<p>score: <span id="score">0</span></p>
-	</header>
+		<p class="score">score: <span id="score">0</span></p>
+		<p class="tip">按上、下、左、右键，即可开始游戏</p>
+	</div>
 	<div id="grid-container">
 		<div class="grid-cell" id="grid-cell-0-0"></div>
 		<div class="grid-cell" id="grid-cell-0-1"></div>
@@ -31,11 +36,13 @@
 		<div class="grid-cell" id="grid-cell-2-1"></div>
 		<div class="grid-cell" id="grid-cell-2-2"></div>
 		<div class="grid-cell" id="grid-cell-2-3"></div>
-		
+
 		<div class="grid-cell" id="grid-cell-3-0"></div>
 		<div class="grid-cell" id="grid-cell-3-1"></div>
 		<div class="grid-cell" id="grid-cell-3-2"></div>
 		<div class="grid-cell" id="grid-cell-3-3"></div>
 	</div>
+</div>
+
 </body>
 </html>

@@ -1,17 +1,19 @@
-header{
-	display: block;
+.main{
+	clear: both;
+	overflow: hidden;
+}
+.tipbox{
 	margin-left: 200px;
-	margin-top: 0px;
-	widows: 100%;
+	margin-top: 150px;
 	text-align: center;
 	font-family: Arial;
-	position: absolute;
+	float: left;
 }
-header h1{
+.title{
 	font-size: 40px;
 	font-weight: bold;
 }
-header #newgamebutton{
+#newgamebutton{
 	display: block;
 	margin: 20px auto;
 	width: 100px;
@@ -21,19 +23,23 @@ header #newgamebutton{
 	border-radius: 10px;
 	text-decoration: none;
 }
-header #newgamebutton:hover{
+#newgamebutton:hover{
 	background-color: #9f8b77;
 }
-header p{
+.score{
 	font-size: 25px;
 	margin: 20px auto;
 }
+.tip{
+	font-size: 14px;
+}
 
 #grid-container{
+	float: left;
 	width: 460px;
 	height: 460px;
 	padding: 20px;
-	margin: 100px auto;
+	margin: 100px auto 0 100px;
 	background-color: #bbada0;
 	border-radius: 10px;
 	position: relative;
@@ -56,9 +62,7 @@ header p{
 }
 .gameover{
 	display: block;
-	margin: auto;
-	margin-top:-170px;
-	margin-left: -20px;
+	margin: -170px auto 0 -20px;
 	width: 500px;
 	height: 500px;
 	text-align: center;
@@ -68,8 +72,7 @@ header p{
 	font-family: Arial;
 	font-size: 50px;
 	color: white;
-	margin: 100px auto;
-	margin-top: 150px;
+	margin: 150px auto 0;
 }
 .gameover span{
 	font-family: Arial;
